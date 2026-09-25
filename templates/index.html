@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RapAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Welcome Screen -->
+        <section class="welcome">
+
+            <div class="logo">
+                Rap<span>AI</span>
+            </div>
+
+            <h1>
+                Welcome to <span>RapAI</span>
+            </h1>
+
+            <p>
+                Your AI rapper for quick answers, ideas and conversations.
+            </p>
+
+        </section>
+
+
+        <!-- Chat Area -->
+        <section class="chat-container">
+
+            <div id="chatBox" class="chat-box">
+
+                <!-- Messages will appear here -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Input Area -->
+        <section class="input-section">
+
+            <div class="input-box">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Ask RapAI anything..."
+                    rows="1"
+                ></textarea>
+
+                <button id="sendButton">
+                    ↑
+                </button>
+
+            </div>
+
+            <p class="disclaimer">
+                RapAI can make mistakes. Keep it short and keep it real. 🎤
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
